@@ -58,6 +58,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5; }
 
+.r-14-30 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0px; }
+
 .r-16-30 {
   font-size: 16px;
   font-weight: 400;
@@ -111,6 +116,13 @@ body {
       margin-left: 64px; }
     .header .nav a {
       color: #ffffff; }
+  @media (max-width: 992px) {
+    .header {
+      justify-content: space-between;
+      padding: 0 36px; } }
+  @media (max-width: 767px) {
+    .header {
+      padding: 0 36px; } }
 
 .footer {
   height: 353px;
@@ -119,6 +131,8 @@ body {
   flex-direction: column; }
   .footer a {
     color: #ffffff; }
+  .footer hr {
+    width: 100%; }
   .footer .icon-social .icon-social-icon {
     width: 48px;
     height: 48px; }
@@ -131,6 +145,14 @@ body {
   .footer .list-2 {
     display: flex;
     align-items: center; }
+  @media (max-width: 992px) {
+    .footer {
+      padding: 0 36px; }
+      .footer .mr-32 {
+        margin-right: 16px; } }
+  @media (max-width: 767px) {
+    .footer {
+      padding: 0 36px; } }
 
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
