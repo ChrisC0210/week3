@@ -1,8 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap");
+.bg-red {
+  background-color: #aa0601; }
+
+.white {
+  color: #ffffff; }
+
+/* 12px */
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+/* 22px */
+/* 30px */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -77,12 +90,6 @@ body {
   font-size: 36px;
   font-weight: 400;
   letter-spacing: 0px; }
-
-.bg-red {
-  background-color: #aa0601; }
-
-.white {
-  color: #ffffff; }
 
 .d-flex {
   display: flex; }
