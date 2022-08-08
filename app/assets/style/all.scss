@@ -1,13 +1,18 @@
-@import "./reset";
-//font
-@import "./font";
-//color
-@import "./color";
-//grid
-@import "./grid";
+//helper
+@import "./helpers/variables";
+@import "./helpers/mixins";
+@import "./helpers/margin";
+@import "./helpers/padding";
+//base
+@import "./base/reset";
+@import "./base/typography";
 //component
-@import "./header";
-@import "./footer";
+//layout
+@import "./layout/grid";
+@import "./layout/header";
+@import "./layout/footer";
+//pages
+@import "./pages/index";
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
   font-weight: normal;

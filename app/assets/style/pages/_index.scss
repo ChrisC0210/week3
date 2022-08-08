@@ -1,0 +1,341 @@
+.banner {
+  background-image: url(../images/home-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 787px;
+  &-text {
+    height: 100%;
+    &-subTitle {
+      font-size: $fz-36;
+      line-height: $line-height;
+      color: $red-800;
+    }
+    &-title {
+      font-size: $fz-64;
+      line-height: $line-height;
+      color: $red-800;
+      font-weight: bold;
+    }
+    &-btn {
+      font-size: $fz-20;
+      line-height: $line-height;
+      color: $white;
+      background-color: $red-500;
+      padding: 6px 12px;
+      border: 0;
+      cursor: pointer;
+      &:hover,
+      &:active,
+      &:focus {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+.title-text{
+  font-size: $fz-48;
+  line-height: $line-height;
+  //color: $red-800;
+  font-weight: bold;
+  text-align: center;
+}
+.card-title{
+  font-size: $fz-48;
+  line-height: $line-height;
+  color: $red-500;
+  font-weight: bold;
+  font-style: italic;
+  background-color: $white;
+  width: 100%;
+  text-align: center;
+}
+.card-box {
+  //padding: 0px 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  li:first-child{
+    margin-left: 0px;
+  }
+  li:last-child{
+    margin-right: 0px;
+  }
+  .img-lg{
+    display: block;
+  }
+  .img-sm{
+    display: none;
+  }
+  @include pad {
+    //flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: space-between;
+    li:nth-child(odd){
+      margin-right: 0px;
+      margin-left: 12px;
+    }
+    li:nth-child(even){
+      margin-left: 0px;
+      margin-right: 12px;
+    }
+  }
+  @include mb {
+    .img-lg{
+      display: none;
+    }
+    .img-sm{
+      display: block;
+    }
+  }
+}
+.about {
+  &-card-box {
+    display: flex;
+    flex-direction: row;
+  }
+  @include pad {
+    padding: 80px 36px;
+    &-card-box {
+      flex-wrap: wrap;
+      //width: calc(100%/2);
+    }
+  }
+}
+.about-card {
+  color: $red-800;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  margin: 32px 12px;
+  &-header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  &-title {
+    font-size: $fz-24;
+    line-height: $line-height;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  &-text {
+    font-size: $fz-16;
+    line-height: $line-height;
+    color: $black;
+  }
+  &-icon {
+    span {
+      font-size: $fz-100;
+    }
+    margin-bottom: 16px;
+  }
+  @include pad {
+    width: calc(100%/2 - 12px);
+    padding: 0 12px;
+  }
+}
+.classic-card {
+  color: $red-800;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //width: 25%;
+  margin: 32px 12px;
+  &-header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  &-img {
+    max-width: 416px;
+    max-height: 416px;
+    img {
+      width: 100%;
+    }
+  }
+  @include pad {
+    margin: 0px 0 24px 0;
+    &-img {
+      max-width: 336px;
+      max-height: 336px;
+    }
+  }
+}
+.bg-img{
+  background-image: url(../images/index-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.design-card {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  //margin: 32px 12px;
+  &-header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  &-img {
+    img {
+      width: 100%;
+    }
+  }
+  @include pad {
+    margin: 0px 0 24px 0;
+  }
+}
+//customer
+.customer-card {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //flex-grow: 1;
+  width: 25%;
+  &-box{
+    margin: 0 12px;
+    border: solid 1px $gray-400;
+    border-radius: 4px;
+    box-shadow: $shadow-md;
+    }
+
+  &-header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  &-img {
+    //max-width: 306px;
+    //max-height: 306px;
+    img {
+      width: 100%;
+    }
+  }
+  &-body {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  &-text {
+    font-size: $fz-16;
+    line-height: $line-height;
+    color: $black;
+  }
+  &-text-small {
+    font-size: $fz-14;
+    line-height: $line-height;
+    color: $gray-700;
+  }
+  @include pad {
+    //margin: 0px 0 24px 0;
+    width: calc(50% - 72px / 4);
+    //&-img {
+      //max-width: 336px;
+      //max-height: 336px;
+    //}
+    &-box{
+      margin: 0 12px;
+    }
+    li:nth-child(2n){
+      margin-right: 0px;
+    }
+    li:nth-child(1n){
+      margin-left: 0px;
+    }
+  }
+}
+//content
+.content-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &-info{
+    max-width: 636px;
+    align-self: center;
+  }
+  &-form{
+    display: flex;
+  }
+  &-input{
+    background-color: $red-100;
+    min-height: 36px;
+    border: solid 1px $black;
+    font-size: $fz-16;
+    padding-left: 12px;
+  }
+  &-textarea{
+    background-color: $red-100;
+    min-height: 168px;
+    border: solid 1px $black;
+    font-size: $fz-16;
+    padding-left: 12px;
+  }
+  ::placeholder { 
+    opacity: 0.2;
+  }
+  input[type="checkbox"] {
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    color: $black;
+    border: 2px solid $black;
+    border-radius: 4px;
+    appearance: none;
+    outline: 0;
+    cursor: pointer;
+    padding-right: 4px;
+    transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      top: -3px;
+      left: 7px;
+      width: 8px;
+      height: 14px;
+      border: solid 2px $red-800;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      opacity: 0;
+    }
+    &:checked {
+      color: $black;
+      border-color: $black;
+      background: $white;
+      &::before {
+        opacity: 1;
+      }
+      ~ label::before {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+  }
+  &-button{
+    background-color: $red-500;
+    color: $white;
+    padding: 16px 176px;
+    font-size: $fz-16;
+    line-height: 24px;
+    font-weight: bold;
+    border: solid ;
+    &:hover, &:active, &:focus{
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+  &-p {
+    font-size: $fz-20;
+    line-height: $line-height;
+    color: $black;
+  }
+  &-text {
+    font-size: $fz-16;
+    line-height: $line-height;
+    color: $black;
+  }
+}

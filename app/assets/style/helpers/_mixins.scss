@@ -1,0 +1,11 @@
+@mixin pad {
+  @media (max-width: $breakpoints-tablet) {
+    @content;
+  }
+}
+@mixin mb {
+  @media (max-width: $breakpoints-mobile) {
+    @content;
+  }
+}
+//columns

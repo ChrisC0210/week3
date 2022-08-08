@@ -19,4 +19,11 @@
       color: $white;
     }
   }
+  @include pad {
+    justify-content: space-between;
+    padding: 0 36px;
+  }
+  @include mb {
+    padding: 0 36px;
+  }
 }

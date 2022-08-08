@@ -1,0 +1,51 @@
+//margin, padding, container
+//1920 - 312＊2 = 1296
+.container {
+  max-width: 1296px;
+  margin: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  @include pad {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+//flex
+.d-flex {
+  display: flex;
+}
+.flex-direction-column{
+  flex-direction: column;
+}
+.flex-direction-row{
+  flex-direction: row;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.align-items-center{
+  align-items: center;
+}
+.align-items-end{
+  align-items: end;
+}
+.align-items-baseline{
+  align-items: baseline;
+}
+.align-content-center{
+  align-content: center;
+}
+.align-content-end{
+  align-content: end;
+}
+
+//
+.mr-22{
+  margin-right: 22px;
+}
+.mr-32{
+  margin-right: 32px;
+}
+.mr-48{
+  margin-right: 48px;
+}
