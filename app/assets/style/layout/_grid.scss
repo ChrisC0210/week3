@@ -9,6 +9,10 @@
     padding-left: 36px;
     padding-right: 36px;
   }
+  @include mb {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
 }
 //flex
 .d-flex {
@@ -40,12 +44,10 @@
 }
 
 //
-.mr-22{
-  margin-right: 22px;
+.d-none{
+  display: none;
 }
-.mr-32{
-  margin-right: 32px;
+.d-block{
+  display: block;
 }
-.mr-48{
-  margin-right: 48px;
-}
+//
