@@ -1,7 +1,7 @@
 "use strict";
 
-console.log('Hello!');
-$(document).ready(function () {
-  console.log('HesSchool Hello!');
+$('.ham-icon').onclick(function (e) {
+  e.preventDefault();
+  $('.dropdown').toggleClass('active');
 });
 //# sourceMappingURL=all.js.map
