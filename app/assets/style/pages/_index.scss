@@ -217,11 +217,11 @@
       max-width: 336px;
       max-height: 336px;
     }
-    @include mb {
-      &-img {
-        max-width: 100%;
-        max-height: 100%;
-      }
+  }
+  @include mb {
+    &-img {
+      max-width: 100%;
+      max-height: 100%;
     }
   }
 }

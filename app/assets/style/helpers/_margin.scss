@@ -7,19 +7,44 @@
 .mb-24{
   margin-bottom: 24px;
 }
+.mb-32{
+  margin-bottom: 32px;
+  @include pad {
+  margin-bottom: 24px;
+  }
+}
 .mb-48{
   margin-bottom: 48px;
 }
 .mb-72{
   margin-bottom: 72px;
 }
+.mb-80{
+  margin-bottom: 80px;
+  @include mb {
+    margin-bottom: 64px;
+  }
+}
 //margin-right
 .mr-22{
   margin-right: 22px;
+  @include mb {
+    margin-right: 8px;
+  }
 }
 .mr-32{
   margin-right: 32px;
 }
 .mr-48{
   margin-right: 48px;
+}
+//mt
+.mt-96{
+  margin-top: 96px;
+  @include pad {
+    margin-top: 80px;
+  }
+  @include mb {
+    margin-top: 40px;
+  }
 }

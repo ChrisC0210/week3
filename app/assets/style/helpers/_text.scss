@@ -1,0 +1,36 @@
+.page-info{
+  &-title{
+    font-size: $fz-48;
+    font-weight: bold;
+    line-height: $line-height;
+    &::before{
+      content: '';
+      border: solid 4px $red-800;
+      margin-right: 16px;
+      min-height: 72px;
+    }
+  }
+  &-subtitle{
+    font-size: $fz-24;
+    font-weight: bold;
+    line-height: $line-height;
+  }
+  &-h4{
+    font-size: $fz-20;
+    font-weight: bold;
+    line-height: $line-height;
+  }
+  &-p{
+    font-size: $fz-16;
+    line-height: $line-height;
+  }
+  @include mb {
+    &-title{
+      font-size: $fz-24;
+      &::before{
+        content: '';
+        min-height: 36px;
+      }
+    }
+  }
+}
