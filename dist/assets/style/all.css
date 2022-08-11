@@ -32,6 +32,12 @@
     .mb-32 {
       margin-bottom: 24px; } }
 
+.mb-46 {
+  margin-bottom: 46px; }
+  @media (max-width: 767px) {
+    .mb-46 {
+      margin-bottom: 24px; } }
+
 .mb-48 {
   margin-bottom: 48px; }
 
@@ -43,6 +49,12 @@
   @media (max-width: 767px) {
     .mb-80 {
       margin-bottom: 64px; } }
+
+.mr-11 {
+  margin-right: 11px; }
+
+.mr-16 {
+  margin-right: 16px; }
 
 .mr-22 {
   margin-right: 22px; }
@@ -284,7 +296,9 @@ body {
     margin-bottom: 8px; }
   .footer .icon-social-icon {
     width: 48px;
-    height: 48px; }
+    height: 48px;
+    font-size: 48px;
+    margin-right: 11px; }
     .footer .icon-social-icon img {
       width: 100%;
       height: 100%; }
@@ -293,7 +307,8 @@ body {
   @media (max-width: 767px) {
     .footer .icon-social-icon {
       width: 24px;
-      height: 24px; }
+      height: 24px;
+      font-size: 24px; }
     .footer .icon-social-text {
       font-size: 16px; }
     .footer .icon-social-sm {
@@ -325,7 +340,6 @@ body {
   font-family: 'Material Symbols Outlined';
   font-weight: normal;
   font-style: normal;
-  font-size: 48px;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -335,9 +349,6 @@ body {
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased; }
-  @media (max-width: 767px) {
-    .material-symbols-outlined {
-      font-size: 24px; } }
 
 @media (max-width: 767px) {
   .list-copyright {
@@ -680,5 +691,115 @@ body {
       padding: 16px 0px; }
     .content-box-info {
       max-width: 100%; } }
+
+.store-info-title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.5; }
+  .store-info-title::before {
+    content: '';
+    border: solid 4px #650300;
+    margin-right: 16px;
+    min-height: 72px; }
+
+.store-info-subtitle {
+  font-size: 24px;
+  line-height: 1.5; }
+
+.store-info-p {
+  font-size: 20px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center; }
+
+@media (max-width: 767px) {
+  .store-info-title {
+    font-size: 24px; }
+    .store-info-title::before {
+      content: '';
+      min-height: 36px; }
+  .store-info-subtitle {
+    font-size: 16px; } }
+
+.store-content {
+  display: flex;
+  justify-content: space-between; }
+  .store-content-left {
+    margin-right: 24px;
+    max-width: 526px; }
+    .store-content-left img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .store-content-right {
+    aspect-ratio: 16 / 9;
+    width: 100%; }
+    .store-content-right iframe {
+      width: 100%;
+      height: 100%; }
+    .store-content-right-icon {
+      font-size: 24px; }
+  @media (max-width: 992px) {
+    .store-content {
+      flex-direction: column; }
+      .store-content-left {
+        margin-right: 0px;
+        min-width: 100%;
+        display: flex; }
+        .store-content-left img {
+          margin-right: 24px; }
+      .store-content-img {
+        width: 50%; }
+      .store-content-text {
+        width: 50%; } }
+  @media (max-width: 767px) {
+    .store-content-left {
+      display: block; }
+      .store-content-left img {
+        margin-right: 0px;
+        width: 100%; }
+    .store-content-img {
+      width: 100%; }
+    .store-content-text {
+      width: 100%; } }
+
+.border-gray-box {
+  border: solid 1px #00000020;
+  padding: 8px 24px; }
+
+.border-gray-box-2 {
+  border: solid 1px #00000020;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column; }
+
+.form-box-style {
+  height: 36px;
+  border: solid 1px #CED4DA;
+  padding: 6px 12px;
+  color: #495057;
+  min-width: 304px;
+  font-size: 18px; }
+
+@media (max-width: 767px) {
+  .form-box {
+    align-items: center; }
+    .form-box-style {
+      min-width: 60%; } }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-right: 2rem; }
 
 /*# sourceMappingURL=all.css.map */

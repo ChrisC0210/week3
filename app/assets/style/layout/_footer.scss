@@ -25,6 +25,8 @@
     &-icon {
       width: 48px;
       height: 48px;
+      font-size: $fz-48;
+      margin-right: 11px;
       img {
         width: 100%;
         height: 100%;
@@ -37,6 +39,7 @@
       &-icon {
         width: 24px;
         height: 24px;
+        font-size: $fz-24;
       }
       &-text{
         font-size: $fz-16;
@@ -80,7 +83,6 @@
   font-family: 'Material Symbols Outlined';
   font-weight: normal;
   font-style: normal;
-  font-size: 48px;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -90,9 +92,6 @@
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
-  @include mb {
-  font-size: 24px;
-  }
 }
 .list-copyright{
   @include mb {
