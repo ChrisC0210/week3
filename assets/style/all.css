@@ -26,14 +26,29 @@
 .mb-24 {
   margin-bottom: 24px; }
 
+.mb-32 {
+  margin-bottom: 32px; }
+  @media (max-width: 992px) {
+    .mb-32 {
+      margin-bottom: 24px; } }
+
 .mb-48 {
   margin-bottom: 48px; }
 
 .mb-72 {
   margin-bottom: 72px; }
 
+.mb-80 {
+  margin-bottom: 80px; }
+  @media (max-width: 767px) {
+    .mb-80 {
+      margin-bottom: 64px; } }
+
 .mr-22 {
   margin-right: 22px; }
+  @media (max-width: 767px) {
+    .mr-22 {
+      margin-right: 8px; } }
 
 .mr-32 {
   margin-right: 32px; }
@@ -41,11 +56,51 @@
 .mr-48 {
   margin-right: 48px; }
 
+.mt-96 {
+  margin-top: 96px; }
+  @media (max-width: 992px) {
+    .mt-96 {
+      margin-top: 80px; } }
+  @media (max-width: 767px) {
+    .mt-96 {
+      margin-top: 40px; } }
+
 .pt-80 {
   padding-top: 80px; }
 
 .pb-80 {
   padding-bottom: 80px; }
+
+.page-info-title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.5; }
+  .page-info-title::before {
+    content: '';
+    border: solid 4px #650300;
+    margin-right: 16px;
+    min-height: 72px; }
+
+.page-info-subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5; }
+
+.page-info-h4 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5; }
+
+.page-info-p {
+  font-size: 16px;
+  line-height: 1.5; }
+
+@media (max-width: 767px) {
+  .page-info-title {
+    font-size: 24px; }
+    .page-info-title::before {
+      content: '';
+      min-height: 36px; } }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -465,7 +520,7 @@ body {
       .classic-card-img {
         max-width: 336px;
         max-height: 336px; } }
-  @media (max-width: 992px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .classic-card-img {
       max-width: 100%;
       max-height: 100%; } }
