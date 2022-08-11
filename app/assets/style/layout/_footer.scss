@@ -1,13 +1,25 @@
 .footer {
-  height: 353px;
+  padding-top: 48px;
+  padding-bottom: 32px;
+  //height: 353px;
   color: $white;
   justify-content: center;
   flex-direction: column;
+  position: relative;
   a {
     color: $white;
   }
   hr{
     width: 100%;
+    margin-bottom: 32px;
+    margin-top: calc(32px - 8px);
+    @include mb {
+      margin-bottom: 16px;
+      margin-top: 16px;
+    }
+  }
+  li{
+    margin-bottom: 8px;
   }
   .icon-social {
     &-icon {
@@ -16,6 +28,24 @@
       img {
         width: 100%;
         height: 100%;
+      }
+    }
+    &-text{
+      font-size: $fz-36;
+    }
+    @include mb {
+      &-icon {
+        width: 24px;
+        height: 24px;
+      }
+      &-text{
+        font-size: $fz-16;
+      }
+      &-sm{
+        position: absolute;
+        top: 48px;
+        right: 12px;
+        float: left;
       }
     }
   }
@@ -28,13 +58,13 @@
     align-items: center;
   }
   @include pad {
-    padding: 0 36px;
+    //padding: 0 36px;
+    padding-bottom: 40px;
     .mr-32{
       margin-right: 16px;
     }
   }
   @include mb {
-    padding: 0 36px;
     .list-hide{
       display: none;
     }
@@ -44,4 +74,34 @@
   font-size: 36px;
   font-weight: 400;
   letter-spacing: 0px;
+}
+//icon
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  @include mb {
+  font-size: 24px;
+  }
+}
+.list-copyright{
+  @include mb {
+    display: inline-block;
+    &-ul{
+      flex-direction: column;
+    }
+    li{
+      margin-bottom: 8px;
+    }
+    }
 }

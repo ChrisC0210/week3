@@ -18,12 +18,57 @@
     a {
       color: $white;
     }
+    @include mb {
+      li {
+        margin-left: 0px;
+      }
+    }
   }
+  .ham-icon {
+    position: absolute;
+    right: 13px;
+    display: none;
+  }
+
   @include pad {
     justify-content: space-between;
     padding: 0 36px;
   }
   @include mb {
-    padding: 0 36px;
+    padding: 0 13px;
+    position: relative;
+    //
+    .ham-icon {
+      display: block;
+    }
+    .dropdown {
+      display: block;
+      text-align: center;
+
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      max-height: 0px;
+      transition: all 0.8s;
+      overflow: hidden;
+      z-index: 120;
+    }
+    .dropdown.active {
+      max-height: 200px;
+    }
+    
+    .dropdown li a {
+      display: block;
+      background: #AA0601;
+      color: #FFFFFF;
+      border-top: 1px solid #FFFFFF;
+      padding: 16px 0;
+      text-decoration: none;
+    }
+    .dropdown li a:hover {
+      background: #8f0400;
+    }
+    //
   }
 }

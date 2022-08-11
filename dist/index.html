@@ -15,11 +15,16 @@
   <header class="bg-red">
   <div class="container header d-flex">
     <h1 class="logo">
-      <a href="../index.html">
+      <a href="/">
         <img src="./assets/images/logo-white.png" alt="logo">
       </a>
     </h1>
-    <ul class="nav r-20-30">
+    <a href="#" class="ham-icon white">
+      <span class="material-symbols-outlined">
+        menu
+        </span>
+    </a>
+    <ul class="nav r-20-30 dropdown">
       <li><a href="#">系列鏡框</a></li>
       <li><a href="#">門市據點</a></li>
       <li><a href="#">部落格</a></li>
@@ -27,6 +32,7 @@
     </ul>
   </div>
 </header>
+
   <!-- section 1 -->
 <section>
   <div class="banner">
@@ -244,7 +250,7 @@
 <section class="bg-pink">
   <div class="container pt-80 pb-80">
     <h2 class="title-text color-primary mb-24">聯絡我們</h2>
-    <form action="" class="content-box">
+    <form action="/" class="content-box">
       <div class="content-box-info">
         <p class="content-box-p mb-24">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
         <div class="content-box-form mb-16 flex-direction-column">
@@ -286,7 +292,7 @@
         <li class="mr-48"><a href="#">部落格</a></li>
         <li><a href="../faq.html">常見問題</a></li>
       </ul>
-      <ul class="d-flex icon-social">
+      <ul class="d-flex icon-social icon-social-sm">
         <li class="white icon-social-icon mr-32"><a href="#"><img src="./assets/images/ic-social-fb.png"
               alt="icon-fb"></a></li>
         <li class="white icon-social-icon mr-32"><a href="#"><img src="./assets/images/ic_social_ig.png"
@@ -301,7 +307,7 @@
             <div class="material-symbols-outlined icon-social-icon mr-22">
               call
             </div>
-            <div>
+            <div class="icon-social-text">
               0800-000-000
             </div>
           </a></li>
@@ -309,18 +315,18 @@
             <div class="material-symbols-outlined icon-social-icon mr-22">
               mail
             </div>
-            <div>
+            <div class="icon-social-text">
               glasses@business.com
             </div>
           </a></li>
       </ul>
     </div>
     <hr>
-    <div class="d-flex list-1">
-      <div class="r-16-30"> 
+    <div class="d-flex list-1 list-copyright">
+      <div class="r-16-30 mb-8"> 
         Copyright © 2020 Glasses.All rights reserved.
       </div>
-      <ul class="d-flex nav r-14-30">
+      <ul class="d-flex list-copyright-ul r-14-30">
         <li class="mr-48"><a href="#">隱私權政策</a></li>
         <li><a href="#">服務條款</a></li>
       </ul>
@@ -328,6 +334,7 @@
   </div>
 </footer>
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
