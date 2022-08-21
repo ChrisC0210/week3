@@ -5,5 +5,6 @@ jQuery(function () {
     e.preventDefault();
     $('.dropdown').toggleClass('active');
   });
+  AOS.init();
 });
 //# sourceMappingURL=all.js.map
